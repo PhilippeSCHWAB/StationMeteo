@@ -1,0 +1,90 @@
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+ 
+}
+
+ol {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 25px;
+  color: blue;
+}
+
+  li {
+    list-style-type: none;
+    padding: 10px;
+  } 
+  
+  
+  h1 {
+    border: 2px solid black;
+    margin: auto;
+    padding: 20px 5px;
+    background-color: yellow;
+    text-align: center;
+    width: 1000px;
+    color: blue;
+  }
+  
+h3 {
+  color: blue;
+}
+
+
+.groupe3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: raw;
+  }
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: raw;
+  border: solid black 4px;
+  font: red
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: raw;
+  border: solid white 4px;
+  font: red sans-serif;
+} 
+
+li{
+    text-align: center;
+  text-justify: auto;
+  font: red sans-serif;
+}
+
+
+td{
+    border: 1px solid black;
+    padding: 10px;
+ }
+
+
+table{
+  border-collapse: collapse
+}
+
+.EnTete
+{
+  font-weight: bold;
+  font-size: 18px;
+
+}
+
+.High{
+  font: red;
+  background-color: yellow;
+  }

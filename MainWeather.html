@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="MainWeather.css">
+        <title>MainWeather</title>
+        <body onload="myFunction()"> 
+      </head>
+      
+     
+      
+      <script>
+          function myFunction() {
+              
+         document.getElementById("PremiereMesure").style.display ="none"; 
+         document.getElementById("TopMesure").style.display = "none";   
+         document.getElementById("TableauMesure").style.display = "none";   
+        // document.getElementById("groupe3").style.display = "none";   
+          }
+      </script>
+            
+
+<body>
+
+  <ol>
+      <li Dernière mesure></li>
+      <li Température></li>
+      <li Humidité></li>
+      <li pression></li>
+  </ol>
+
+    
+
+    <div>
+        <h1> BIENVENUE DANS LA STATION METEO DE LA PROMO</h1>
+        <ol>
+            <li id="foo">Dernière mesure</li>
+            <li id="foo2">Top mesure</li>
+            <li id="foo3">Tableau des mesures</li>
+            <li id="foo4">Graphique des mesures</li>
+        </ol>
+
+    </div>
+    <nav>  
+      <div id="PremiereMesure">
+            <div class="groupe3">  
+           
+                <ul>
+               
+                    <p class="EnTete" id="ValeurRetourDate">ValeurRetourDate.</p>
+                    <p id="ValeurRetourTemperature">ValeurRetourTemperature.</p>
+                    <p id="ValeurRetourpressure">ValeurRetourpressure.</p>
+                    <p id="ValeurRetourHumidity">ValeurRetourHumidity.</p>                
+                </ul>
+            </div>
+</div>
+      <div id="TopMesure">   
+
+            <div class="groupe3">         
+
+
+                <ul>
+                        <p class="EnTete" id="ValeurRetourDateMaxH">ValeurRetourDateMaxH.</p>
+                        <p id="ValeurRetourTemperatureMaxH">ValeurRetourTemperatureMaxH.</p>
+                        <p id="ValeurRetourpressureMaxH">ValeurRetourpressureMaxH.</p>
+                        <p class="High"id="ValeurRetourHumidityMaxH">ValeurRetourHumidityMaxH.</p>
+            
+                </ul>           
+                <ul>
+                    <p class="EnTete"  id="ValeurRetourDateMaxT">ValeurRetourDateMaxT.</p>
+                    <p class="High"id="ValeurRetourTemperatureMaxT">ValeurRetourTemperatureMaxT.</p>
+                    <p id="ValeurRetourpressureMaxT">ValeurRetourpressureMaxT.</p>
+                    <p id="ValeurRetourHumidityMaxT">ValeurRetourHumidityMaxT.</p>
+                </ul>         
+                <ul>
+                    <p  class="EnTete" id="ValeurRetourDateMaxP">ValeurRetourDateMaxP.</p>
+                    <p id="ValeurRetourTemperatureMaxP">ValeurRetourTemperatureMaxP.</p>
+                    <p class="High"id="ValeurRetourpressureMaxP">ValeurRetourpressureMaxP.</p>
+                    <p id="ValeurRetourHumidityMaxP">ValeurRetourHumidityMaxP.</p>
+                </ul> 
+        </div>
+
+    </div>
+
+ 
+    
+</nav> 
+<div id="TableauMesure">
+<section>
+    <div class="center">
+            <form>
+                    <input class="margin height font" type="text" id="DateDebut" placeholder="Date debut au format aaaa-mm-jj">
+                    <input class="margin height font" type="text" id="DateFin" placeholder="Date fin au format aaaa-mm-jj">
+                    <button  id="PBGo">Go</button>
+                    <button  id="PBPurge">Purge</button>
+                </form>
+    </div>
+</section>
+<section>
+    <div class="center">
+        <table class="font">
+          
+                <tr>
+                    <td>date</td>
+                    <td>temperature (°C)</td>
+                    <td>humidite (Hum)</td>
+                    <td>Pression (hPa)</td>
+                </tr>
+          
+            <tbody id="tableComments" class="font">
+              
+                
+            </tbody>
+        </table>
+    </div>
+</section>
+</div>
+
+</body>
+
+<script src="MainWeather.js"></script>
+
